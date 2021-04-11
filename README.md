@@ -171,7 +171,7 @@ sudo lsof -i:3000
 Navigate to the `node-server` path and run the server using following commands:
 ```
 cd webservice/server/node-server
-node ./server.js
+node ./server.js &
 ```
 If successful, this message will appear in the terminal: 
 
@@ -185,7 +185,7 @@ Mosca server started.
 Open a new terminal and run the commands below:
 ```
 cd ../../ui
-npm run dev
+npm run dev &
 ```
 
 If successful, this message will appear in the terminal:
@@ -199,7 +199,7 @@ webpack: Compiled successfully.
 Open a new terminal and run the below commands:
 ```
 cd ../..
-sudo ffserver -f ./ffmpeg/server.conf
+sudo ffserver -f ./ffmpeg/server.conf &
 ```
 
 ### Step 4 - Set Up the Environment

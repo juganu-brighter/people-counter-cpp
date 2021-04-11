@@ -83,8 +83,10 @@ sudo apt-get install intel-openvino-dev-ubuntu18-2020.3.194
 
 ### Install NodeJs & NPM
 ```
-sudo apt-get install nodejs
-sudo apt-get install npm
+sudo apt-get install curl
+
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 ### Which model to use

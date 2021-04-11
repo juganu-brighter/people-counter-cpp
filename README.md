@@ -52,9 +52,45 @@ sudo apt-get update && sudo apt-get install git
 git clone https://github.com/intel-iot-devkit/people-counter-cpp.git 
 ```
 
+### Get the Intel Distribution List for OpenVino
+
+Follow these Steps
+
+1. Download the Repo Key
+```
+wget https://apt.repos.intel.com/openvino/2020/GPG-PUB-KEY-INTEL-OPENVINO-2020
+```
+
+2. Add the Repo Key to the Source-list
+```
+sudo apt-key add GPG-PUB-KEY-INTEL-OPENVINO-2020
+```
+
+3. Move the Repo list into Ubuntu Source List
+```
+cho "deb https://apt.repos.intel.com/openvino/2020 all main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2020.list
+```
+
+4. Update the Repo list
+```
+sudo apt-get update
+```
+
+5. Install the following Package - 2020.3 open vino DEV ubuntu 18
+```
+sudo apt-get install intel-openvino-dev-ubuntu18-2020.3.194
+```
+
 ### Which model to use
 
 This application uses the [person-detection-retail-0013](https://docs.openvinotoolkit.org/2020.3/_models_intel_person_detection_retail_0013_description_person_detection_retail_0013.html) Intel® model, that can be accessed using the **model downloader**. The **model downloader** downloads the __.xml__ and __.bin__ files that will be used by the application.
+
+## Download the model
+```
+sudo chmod 777 -R /opt/intel/openvino/deployment_tools/tools/model_downloader/ 
+
+/opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/downloader.py --name person-detection-retail-0013 --precisions FP32 -o /opt/intel/openvino/deployment_tools/tools/model_downloader/
+```
 
 ### Install the dependencies
 
@@ -116,12 +152,6 @@ Go to people-counter-cpp directory:
 cd <path_to_people-counter-cpp_directory>
 ```
 
-## Download the model
-```
-sudo chmod 777 -R /opt/intel/openvino/deployment_tools/tools/model_downloader/ 
-
-/opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/downloader.py --name person-detection-retail-0013 --precisions FP32 -o /opt/intel/openvino/deployment_tools/tools/model_downloader/
-```
 
 ### Step 1 - Start the Mosca server
 

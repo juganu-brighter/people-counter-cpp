@@ -233,10 +233,15 @@ export MQTT_SERVER=localhost:1884
 export MQTT_CLIENT_ID=cvservice
 ```
 
-### Run on the CPU
+### Run on the CPU - Video File
 
 ```
 ./obj_recognition -i Pedestrain_Detect_2_1_1.mp4 -m /opt/intel/openvino/deployment_tools/tools/model_downloader/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -d CPU -thresh 0.65 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 768x432 -i - http://localhost:8090/fac.ffm
+```
+
+### Run on the CPU - RTSP input
+```
+./obj_recognition -i 'rtsp://admin:Juganu1234@192.168.63.115:7001/4a50c99d-d0d6-3ae7-ab49-2da0c28453c7?resolution=640p&codec=mjpeg' -m /opt/intel/openvino/deployment_tools/tools/model_downloader/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -d CPU -thresh 0.65 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 640x480 -i - http://localhost:8090/fac.ffm^C
 ```
 
 **Note**:To see the output on web based interface, open the link [http://localhost:8080](http://localhost:8080/) on browser. Refresh the browser window if the video does not play automatically.

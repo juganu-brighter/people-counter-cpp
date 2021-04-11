@@ -80,7 +80,7 @@ sudo apt-get update
 ```
 sudo apt-get install intel-openvino-dev-ubuntu18-2020.3.194
 ```
-
+Read me - https://docs.openvinotoolkit.org/2020.3/_docs_install_guides_installing_openvino_apt.html
 ### Install NodeJs & NPM & cmake
 ```
 sudo apt-get install curl cmake -y

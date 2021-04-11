@@ -81,6 +81,11 @@ sudo apt-get update
 sudo apt-get install intel-openvino-dev-ubuntu18-2020.3.194
 ```
 
+### Install NodeJs
+```
+sudo apt-get install nodejs
+```
+
 ### Which model to use
 
 This application uses the [person-detection-retail-0013](https://docs.openvinotoolkit.org/2020.3/_models_intel_person_detection_retail_0013_description_person_detection_retail_0013.html) Intel® model, that can be accessed using the **model downloader**. The **model downloader** downloads the __.xml__ and __.bin__ files that will be used by the application.

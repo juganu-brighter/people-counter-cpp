@@ -88,6 +88,7 @@ sudo apt-get install curl cmake -y
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+Read me - https://github.com/nodesource/distributions/blob/master/README.md
 
 ### Which model to use
 

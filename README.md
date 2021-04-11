@@ -81,9 +81,10 @@ sudo apt-get update
 sudo apt-get install intel-openvino-dev-ubuntu18-2020.3.194
 ```
 
-### Install NodeJs
+### Install NodeJs & NPM
 ```
 sudo apt-get install nodejs
+sudo apt-get install npm
 ```
 
 ### Which model to use

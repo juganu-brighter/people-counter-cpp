@@ -68,7 +68,7 @@ sudo apt-key add GPG-PUB-KEY-INTEL-OPENVINO-2020
 
 3. Move the Repo list into Ubuntu Source List
 ```
-cho "deb https://apt.repos.intel.com/openvino/2020 all main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2020.list
+echo "deb https://apt.repos.intel.com/openvino/2020 all main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2020.list
 ```
 
 4. Update the Repo list

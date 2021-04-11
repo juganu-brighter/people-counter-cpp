@@ -116,6 +116,13 @@ Go to people-counter-cpp directory:
 cd <path_to_people-counter-cpp_directory>
 ```
 
+## Download the model
+```
+sudo chmod 777 -R /opt/intel/openvino/deployment_tools/tools/model_downloader/ 
+
+/opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/downloader.py --name person-detection-retail-0013 --precisions FP32 -o /opt/intel/openvino/deployment_tools/tools/model_downloader/
+```
+
 ### Step 1 - Start the Mosca server
 
 Ensure that no process is running at port address 3000 using the following command:

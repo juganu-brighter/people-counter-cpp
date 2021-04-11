@@ -241,6 +241,55 @@ export MQTT_CLIENT_ID=cvservice
 
 **Note**:To see the output on web based interface, open the link [http://localhost:8080](http://localhost:8080/) on browser. Refresh the browser window if the video does not play automatically.
 
+### Example for Data - MQTT
+```
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"total":19}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person/duration <- {"duration":6}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"count":0}
+Published to person <- {"total":20}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+Published to person <- {"count":1}
+```
+
 ### Run on the GPU
 
 * To use GPU in 16-bit mode, use the following command:

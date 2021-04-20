@@ -631,7 +631,7 @@ int height = cap.get(cv::CAP_PROP_FRAME_HEIGHT);
 				imwrite("out.jpg", prev_frame);
 			}
 			else {
-				outputFrame(prev_frame);
+				//outputFrame(prev_frame);
 			}
 
 			if (FLAGS_f) {

@@ -1,0 +1,15 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/ieservice/build",
+    "cmake.buildEnvironment": {
+        "LD_LIBRARY_PATH": "/opt/intel/openvino/data_processing/dl_streamer/lib:/opt/intel/openvino/data_processing/gstreamer/lib:/opt/intel/openvino/opencv/lib:/opt/intel/openvino/deployment_tools/ngraph/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/tbb/lib:/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64",
+        "InferenceEngine_DIR": "/opt/intel/openvino/deployment_tools/inference_engine/share",
+        "OpenCV_DIR": "/opt/intel/openvino/opencv/cmake",
+        "PATH": "/opt/intel/openvino/deployment_tools/model_optimizer:/opt/intel/openvino/data_processing/gstreamer/bin:/opt/intel/openvino/data_processing/gstreamer/bin/gstreamer-1.0:/home/juganu/.vscode-server/bin/08a217c4d27a02a5bcde898fd7981bda5b49391b/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/ieservice",
+    "cmake.configureEnvironment": {
+        "LD_LIBRARY_PATH": "/opt/intel/openvino/data_processing/dl_streamer/lib:/opt/intel/openvino/data_processing/gstreamer/lib:/opt/intel/openvino/opencv/lib:/opt/intel/openvino/deployment_tools/ngraph/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/hddl/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/mkltiny_lnx/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/tbb/lib:/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64",
+        "InferenceEngine_DIR": "/opt/intel/openvino/deployment_tools/inference_engine/share",
+        "OpenCV_DIR": "/opt/intel/openvino/opencv/cmake",
+        "PATH": "/opt/intel/openvino/deployment_tools/model_optimizer:/opt/intel/openvino/data_processing/gstreamer/bin:/opt/intel/openvino/data_processing/gstreamer/bin/gstreamer-1.0:/home/juganu/.vscode-server/bin/08a217c4d27a02a5bcde898fd7981bda5b49391b/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"    }
+}

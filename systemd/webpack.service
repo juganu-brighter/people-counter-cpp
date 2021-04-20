@@ -3,7 +3,7 @@ Description=Node WebPack for People Counter front-end
 
 [Service]
 Type=simple
-WorkingDirectory=/home/ssgdemo/reference-implementation-private/people-counter/webservice/ui
+WorkingDirectory=/home/juganu/people-counter-cpp/webservice/ui
 ExecStart=/usr/bin/npm run dev
 Restart=on-failure
 

@@ -3,7 +3,7 @@ Description=FFServer instance for streaming to People Counter UI
 
 [Service]
 Type=simple
-WorkingDirectory=/home/ssgdemo/reference-implementation-private/people-counter
+WorkingDirectory=/home/juganu/people-counter-cpp
 ExecStart=/usr/bin/ffserver -f ffmpeg/server.conf
 Restart=on-failure
 
